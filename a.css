@@ -1,0 +1,129 @@
+*{
+    padding: 3px;
+}
+.top{
+    margin-top: -15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.darkli{
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+}
+.darkmode{
+    width: 100px;
+    font-size: 16px;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 5px;
+    padding: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.darktext{
+    color: white;
+}
+.darkmode:hover{
+    transform: scale(1.1);
+}
+.darksearch{
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+    border: none;
+    box-shadow: none;
+    
+}
+.active{
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+    border: 1px solid rgb(77, 77, 77);
+}
+.darkcountry{
+    background-color: hsl(209, 23%, 22%);
+}
+.dark{
+    background-color: hsl(207, 26%, 17%);
+}
+.darkcountry p{
+    color: white;
+}
+.name{
+    font-size: 20px;
+}
+span{
+    color: rgb(124, 123, 123);
+}
+.country{
+    width: 250px;
+    padding: 0;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.hidden{
+    display: none;
+}
+.countries{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: center;
+    gap: 25px;
+}
+.country:hover{
+    transform: scale(1.05);
+}
+img{
+    width: 250px;
+    padding: 0;
+    height: 150px;
+    border-radius: 10px;
+}
+li{
+    list-style-type: none;
+    background-color: white;
+    padding: 15px;
+    margin: 5px;
+    font-size: 24px;
+    width: 400px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+li:hover{
+    transform: scale(1.1);
+}
+ul{
+    margin-top: -5px;
+}
+input{
+    width: 650px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    padding: 7px;
+    box-shadow: 1px 2px 1px rgb(109, 109, 109);
+    font-size: 20px;
+    transition: 0.3s;
+    padding: 10px;
+}
+input:focus{
+    border: none;
+    transform: scale(1.05);
+}
+
+@media(max-width:768px){
+    input{
+        width: 450px;
+        font-size: 18px;
+    }
+    li{
+        padding: 5px;
+        font-size: 20px;
+        width: 225px;
+    }
+    .countries{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
